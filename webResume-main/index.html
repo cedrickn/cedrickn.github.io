@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="pictures/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body onload="typedEffect()">
+
+    <main id="content">
+        <section>
+            <nav>
+                <span class="text3">Home</span>
+                <ol>
+                    <span class="text3" style="cursor: pointer;" onclick="navSideOpen()">Menu</span>
+                </ol>
+            </nav>
+            <div id="mymenu" class="menu">
+                <a class="closebutton" onclick="navSideClosed()" href="javascript:void(0)">&rarr;</a>
+                <label class="switch" title="Switch to ☀️/🌙 mode">
+                    <input id="cb" type="checkbox" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="myStudies.html">My studies</a>
+                <a href="projects.html">Projects</a>
+                <span class="myText">made by cedrickn</span>
+                <span class="myText"
+                    onclick="location.href='https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/'"
+                    style="margin-bottom: 20px; cursor: pointer;"
+                    title="https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/">My LinkedIn</span>
+            </div>
+        </section>
+        <section>
+            <!-- <h1 class="text1">Cedrick Gontran Khandy Nicolas</h1> -->
+            <h1 id="typed" class="text1"></h1>
+            <pic class="center" style="width: 175px; height: 175px;">
+        </section>
+        <section>
+            <div class="text4" style="text-align: center; width: 95%;">
+                <div style="display: inline-block; text-align: center;">
+                    <br>Sense of communication and organization<br>
+                    <br>Team spirit, autonomy, rigor and punctuality<br>
+                    <br>Concerned for optimizing ways of executing
+                    things<br>
+                    <br>Interested in computers (use of Windows, Linux) and
+                    solving problems<br>
+                </div>
+            </div>
+        </section><br>
+        <section style="display: flex;">
+            <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="column">
+                    <img src="pictures/C++_Logo.png" width="40" height="45">
+                </div>
+                <div class="column">
+                    <img src="pictures/java-logo-1.png" width="40" height="40">
+                </div>
+                <div class="column">
+                    <img src="pictures/javascript-logo.png" width="40" height="40">
+                </div>
+                <div class="column">
+                    <img src="pictures/110px-Python-logo-notext.svg.png" width="40" height="40">
+                </div>
+                <div class="column">
+                    <img src="pictures/logo-connector-mysql1.png" width="80" height="40">
+                </div>
+                <div class="column">
+                    <img src="pictures/CSS3_and_HTML5_logos_and_wordmarks.svg.png" width="60" height="38.835">
+                </div>
+            </div>
+        </section>
+        <section style="text-align: center;">
+            <span class="text4">Bases in C++ (Codeblocks), Java (IntelliJ), JavaScript (Brackets),<br> 
+                <br>Python (Pycharm), MySQL (Postgtress), Css (Brackets), Html (Brackets),<br>
+                <br>Shell Script (Command Prompt), Assembly (LMC) and Android app developpement (Android studio)<br>
+            </span>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('body').css('display', 'none');
+        $('body').fadeIn(2000);
+    });
+</script>
+
+</html>

@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="pictures/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Projects</title>
+</head>
+
+<body>
+    <main id="content">
+        <section class="landing">
+
+            <nav>
+                <span class="text3">Projects</span>
+                <ol>
+                    <span class="text3" style="cursor: pointer;" onclick="navSideOpen()">Menu</span>
+                </ol>
+            </nav>
+            <div id="mymenu" class="menu">
+                <a href="javascript:void(0)" class="closebutton" onclick="navSideClosed()">&rarr;</a>
+                <label class="switch" title="Switch to ☀️/🌙 mode">
+                    <input id="cb" type="checkbox" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="myStudies.html">My studies</a>
+                <span class="myText">made by cedrickn</span>
+                <span class="myText"
+                    onclick="location.href='https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/'"
+                    style="margin-bottom: 20px; cursor: pointer;"
+                    title="https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/">My LinkedIn</span>
+            </div>
+            <h1 class="text">What projects have I done?</h1>
+        </section><br>
+        <div class="text4" style="text-align: center; width: 95%;">
+            <div style="display: inline-block; text-align: left;">
+                &#8611; Conception of a robot (school project)<br>
+                <span style="font-weight: 300;">
+                    &#8674; Creation of a robot, programmed to follow a circuit with SimulIDE<br>
+                    &#8674; Use of C++ language<br>
+                </span>
+                </span>
+                <img class="center" src="pictures/circuit.jpg" style="width: 307.68px; height: 241.76px;">
+                <div style="display: inline-block; text-align: justify;">
+                    <span class="text4" style="max-width: 800px; font-weight: 300;">
+                        As the first project of Polytechnique's Software Engineering program, we had to build a hardware
+                        and software system. This system was based on a virtual microcontroller, due to the COVID-19
+                        pandemic.<br>
+                        We had to write a library in C++ in order to add various functionalities to our robot (including
+                        inputs/outputs and peripherals). For example, the robot had to move forward for a certain number
+                        of seconds and then stop. We also had to manipulate the LED lights' colors.<br>
+                        Of course, we had to learn about Makefiles in order to compile our code (reminder: C++ is a
+                        compiled language) and what we wrote had to be understandable and coherent.<br>
+                        During this project, communication was the key to success, that is why we had to explain to each
+                        other the lines of code we added before pushing the modifications on Git.<br>
+                        In short, this project taught us how to behave during a teamwork, we learned a lot about C++ and
+                        its use in such a hardware.<br>
+                    </span>
+                </div>
+                <br>
+                <span class="text4"><br>&#8611; Conception of a website<br>
+                    <span style="font-weight: 300;">
+                        &#8674; Introduction to HTML, CSS, Javascript languages<br>
+                    </span>
+                </span>
+                <div style="display: inline-block; text-align: justify;">
+                    <span class="text4" style="max-width: 800px; font-weight: 300;">
+                        The goal of this project was to create my own Resume Website.
+                        I wanted to learn these languages by creating something that could potentially be useful for
+                        me.<br>
+                        I first started by learning the basics of HTML, then I wanted to learn CSS in order to style my
+                        website.
+                        Thereafter, I wanted to add some features (such as switching between light and night mode), so I
+                        had to learn Javascript.<br>
+                        From time to time, I still try to improve my Web Resume.<br>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('body').css('display', 'none');
+        $('body').fadeIn(2000);
+    });
+</script>
+
+</html>

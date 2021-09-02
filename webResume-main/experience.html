@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="pictures/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Experience</title>
+</head>
+
+<body>
+    <main id="content">
+        <section>
+            <nav>
+                <span class="text3">Experience</span>
+                <ol>
+                    <span class="text3" style="cursor: pointer;" onclick="navSideOpen()">Menu</span>
+                </ol>
+            </nav>
+            <div id="mymenu" class="menu">
+                <a href="javascript:void(0)" class="closebutton" onclick="navSideClosed()">&rarr;</a>
+                <label class="switch" title="Switch to ☀️/🌙 mode">
+                    <input id="cb" type="checkbox" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <a href="index.html">Home</a>
+                <a href="myStudies.html">My studies</a>
+                <a href="projects.html">Projects</a>
+                <span class="myText">made by cedrickn</span>
+                <span class="myText"
+                    onclick="location.href='https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/'"
+                    style="margin-bottom: 20px; cursor: pointer;"
+                    title="https://www.linkedin.com/in/c%C3%A9drick-nicolas-bb2181144/">My LinkedIn</span>
+            </div>
+            <h1 class="text">Where did I work?</h1>
+        </section>
+        <div class="text4" style="text-align: center; width: 95%;">
+            <div style="display: inline-block; text-align: left;">
+                <span style="cursor: pointer;" title="Ministère de l'immigration, de la francisation et de l'intégration">
+                    &#8611; 2021&emsp;Student Employment, Government of Quebec, Montreal (Quebec)<br>
+                </span>
+                <span style="font-weight: 300;">
+                    Participate in testing activities at 
+                    <span style="cursor: pointer;" title="functional, regression, performance, stress, load, safety">every level;<br></span>
+                    Develop and execute automated functional tests;<br>
+                    Perform the analysis of the functional documentation;<br>
+                    Write test scenarios and test cases;<br>
+                    Create datasets and run tests;<br>
+                    Take note and follow up on anomalies;<br>
+                    Perform any activity related to quality assurance.<br>
+                </span>
+                <br>
+                &#8611; 2020&emsp;Floor clerk, Pharmaprix, Montreal (Quebec)<br>
+                <span style="font-weight: 300;">
+                    Customer service (telephone, taking orders, help, etc.);<br>
+                    Organize the warehouse products as well as the sales area;<br>
+                    Prioritize the various tasks requested;<br>
+                    Knowledge of the items for sale.<br>
+                </span>
+                <br>
+                &#8611; 2018&emsp;Office clerk (Administrative Assistant), EDSI, Paris (France)<br>
+                <span style="font-weight: 300;">
+                    Respond to customer requests (phone, emails, mails);<br>
+                    Collect and archive the various company documents;<br>
+                    Transmission urgent to the employees;<br>
+                    Synthesize the meetings’ content.<br>
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('body').css('display', 'none');
+        $('body').fadeIn(2000);
+    });
+</script>
+
+</html>
