@@ -1,3 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Goblin One (the size is 50)
+- Font Title: Ibarra Real Nova
+- Font Author: Copyright 2007 The Ibarra Real Nova Project Authors (https://github.com/googlefonts/ibarrareal)
+- Font Source: http://fonts.gstatic.com/s/ibarrarealnova/v8/sZlSdQiA-DBIDCcaWtQzL4BZHoiDundw4ATyjed3EXeH48DtVT9TWIvS.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
